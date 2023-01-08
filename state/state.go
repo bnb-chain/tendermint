@@ -6,9 +6,9 @@ import (
 	"io/ioutil"
 	"time"
 
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
-	"github.com/tendermint/tendermint/version"
+	"github.com/bnb-chain/tendermint/types"
+	tmtime "github.com/bnb-chain/tendermint/types/time"
+	"github.com/bnb-chain/tendermint/version"
 )
 
 // database keys

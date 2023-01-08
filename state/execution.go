@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	"github.com/tendermint/tendermint/libs/fail"
-	"github.com/tendermint/tendermint/libs/log"
-	mempl "github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/bnb-chain/tendermint/abci/types"
+	dbm "github.com/bnb-chain/tendermint/libs/db"
+	"github.com/bnb-chain/tendermint/libs/fail"
+	"github.com/bnb-chain/tendermint/libs/log"
+	mempl "github.com/bnb-chain/tendermint/mempool"
+	"github.com/bnb-chain/tendermint/proxy"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

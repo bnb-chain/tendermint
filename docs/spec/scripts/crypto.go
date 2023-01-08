@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
+	cryptoAmino "github.com/bnb-chain/tendermint/crypto/encoding/amino"
 	amino "github.com/tendermint/go-amino"
-	cryptoAmino "github.com/tendermint/tendermint/crypto/encoding/amino"
 )
 
 func main() {

@@ -11,18 +11,18 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/libs/log"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	"github.com/bnb-chain/tendermint/libs/log"
 
-	abcicli "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/example/code"
-	"github.com/tendermint/tendermint/abci/example/counter"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/abci/server"
-	servertest "github.com/tendermint/tendermint/abci/tests/server"
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/abci/version"
-	"github.com/tendermint/tendermint/crypto/merkle"
+	abcicli "github.com/bnb-chain/tendermint/abci/client"
+	"github.com/bnb-chain/tendermint/abci/example/code"
+	"github.com/bnb-chain/tendermint/abci/example/counter"
+	"github.com/bnb-chain/tendermint/abci/example/kvstore"
+	"github.com/bnb-chain/tendermint/abci/server"
+	servertest "github.com/bnb-chain/tendermint/abci/tests/server"
+	"github.com/bnb-chain/tendermint/abci/types"
+	"github.com/bnb-chain/tendermint/abci/version"
+	"github.com/bnb-chain/tendermint/crypto/merkle"
 )
 
 // client is a global variable so it can be reused by the console

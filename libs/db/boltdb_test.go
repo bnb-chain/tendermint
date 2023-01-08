@@ -1,3 +1,4 @@
+//go:build boltdb
 // +build boltdb
 
 package db
@@ -9,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
 )
 
 func TestBoltDBNewBoltDB(t *testing.T) {

@@ -1,3 +1,4 @@
+//go:build cleveldb
 // +build cleveldb
 
 package db
@@ -10,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
 )
 
 func BenchmarkRandomReadsWrites2(b *testing.B) {

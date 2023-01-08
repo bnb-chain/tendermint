@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
+	"github.com/bnb-chain/tendermint/types"
 	"github.com/pkg/errors"
-	"github.com/tendermint/tendermint/types"
 )
 
 // Waiter is informed of current height, decided whether to quit early

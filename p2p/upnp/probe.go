@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/bnb-chain/tendermint/libs/log"
 )
 
 type UPNPCapabilities struct {

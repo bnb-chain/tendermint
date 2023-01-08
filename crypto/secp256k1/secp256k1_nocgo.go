@@ -1,3 +1,4 @@
+//go:build !libsecp256k1
 // +build !libsecp256k1
 
 package secp256k1
@@ -7,7 +8,7 @@ import (
 
 	secp256k1 "github.com/btcsuite/btcd/btcec"
 
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/bnb-chain/tendermint/crypto"
 )
 
 // used to reject malleable signatures

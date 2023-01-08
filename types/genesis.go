@@ -7,9 +7,9 @@ import (
 	"io/ioutil"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	"github.com/bnb-chain/tendermint/crypto"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	tmtime "github.com/bnb-chain/tendermint/types/time"
 )
 
 const (

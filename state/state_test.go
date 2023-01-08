@@ -11,14 +11,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	dbm "github.com/tendermint/tendermint/libs/db"
+	abci "github.com/bnb-chain/tendermint/abci/types"
+	"github.com/bnb-chain/tendermint/crypto"
+	"github.com/bnb-chain/tendermint/crypto/ed25519"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	dbm "github.com/bnb-chain/tendermint/libs/db"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/bnb-chain/tendermint/config"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 // setupTestCase does setup common to all test cases.

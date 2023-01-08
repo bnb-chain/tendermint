@@ -8,8 +8,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/p2p/conn"
+	"github.com/bnb-chain/tendermint/crypto"
+	"github.com/bnb-chain/tendermint/p2p/conn"
 )
 
 const (

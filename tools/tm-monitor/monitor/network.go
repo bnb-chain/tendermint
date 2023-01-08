@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
+	tmtypes "github.com/bnb-chain/tendermint/types"
 	metrics "github.com/rcrowley/go-metrics"
-	tmtypes "github.com/tendermint/tendermint/types"
 )
 
 // UptimeData stores data for how long network has been running.

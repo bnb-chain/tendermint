@@ -18,9 +18,9 @@ import (
 	"golang.org/x/crypto/hkdf"
 	"golang.org/x/crypto/nacl/box"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	cmn "github.com/tendermint/tendermint/libs/common"
+	"github.com/bnb-chain/tendermint/crypto"
+	"github.com/bnb-chain/tendermint/crypto/ed25519"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
 )
 
 // 4 + 1024 == 1028 total frame size

@@ -10,11 +10,11 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	tmpubsub "github.com/tendermint/tendermint/libs/pubsub"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpcclient "github.com/tendermint/tendermint/rpc/lib/client"
-	"github.com/tendermint/tendermint/types"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	tmpubsub "github.com/bnb-chain/tendermint/libs/pubsub"
+	ctypes "github.com/bnb-chain/tendermint/rpc/core/types"
+	rpcclient "github.com/bnb-chain/tendermint/rpc/lib/client"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 /*

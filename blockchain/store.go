@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"sync"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	dbm "github.com/tendermint/tendermint/libs/db"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	dbm "github.com/bnb-chain/tendermint/libs/db"
 
-	"github.com/tendermint/tendermint/types"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 /*

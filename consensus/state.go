@@ -10,17 +10,17 @@ import (
 
 	"github.com/pkg/errors"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/libs/fail"
-	"github.com/tendermint/tendermint/libs/log"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	"github.com/bnb-chain/tendermint/libs/fail"
+	"github.com/bnb-chain/tendermint/libs/log"
+	tmtime "github.com/bnb-chain/tendermint/types/time"
 
-	cfg "github.com/tendermint/tendermint/config"
-	cstypes "github.com/tendermint/tendermint/consensus/types"
-	tmevents "github.com/tendermint/tendermint/libs/events"
-	"github.com/tendermint/tendermint/p2p"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/bnb-chain/tendermint/config"
+	cstypes "github.com/bnb-chain/tendermint/consensus/types"
+	tmevents "github.com/bnb-chain/tendermint/libs/events"
+	"github.com/bnb-chain/tendermint/p2p"
+	sm "github.com/bnb-chain/tendermint/state"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

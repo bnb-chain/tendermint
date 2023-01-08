@@ -4,7 +4,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/tendermint/tendermint/p2p"
+	"github.com/bnb-chain/tendermint/p2p"
 )
 
 // TestMockPeerBehaviour tests the MockPeerBehaviour' ability to store reported

@@ -3,27 +3,34 @@
 
 package types
 
-import proto "github.com/gogo/protobuf/proto"
-import golang_proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
-import _ "github.com/gogo/protobuf/gogoproto"
-import _ "github.com/golang/protobuf/ptypes/timestamp"
-import merkle "github.com/tendermint/tendermint/crypto/merkle"
-import common "github.com/tendermint/tendermint/libs/common"
-
-import time "time"
-
-import bytes "bytes"
-
 import (
+	proto "github.com/gogo/protobuf/proto"
+	golang_proto "github.com/golang/protobuf/proto"
+
+	fmt "fmt"
+
+	math "math"
+
+	_ "github.com/gogo/protobuf/gogoproto"
+
+	_ "github.com/golang/protobuf/ptypes/timestamp"
+
+	merkle "github.com/bnb-chain/tendermint/crypto/merkle"
+
+	common "github.com/bnb-chain/tendermint/libs/common"
+
+	time "time"
+
+	bytes "bytes"
+
 	context "golang.org/x/net/context"
+
 	grpc "google.golang.org/grpc"
+
+	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
+
+	io "io"
 )
-
-import github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
-
-import io "io"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

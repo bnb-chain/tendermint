@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
+	cmn "github.com/bnb-chain/tendermint/libs/common"
 	"github.com/stretchr/testify/assert"
 	amino "github.com/tendermint/go-amino"
-	cmn "github.com/tendermint/tendermint/libs/common"
 )
 
 const ProofOpDomino = "test:domino"

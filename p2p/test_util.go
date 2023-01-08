@@ -5,13 +5,13 @@ import (
 	"net"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/bnb-chain/tendermint/crypto"
+	"github.com/bnb-chain/tendermint/crypto/ed25519"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	"github.com/bnb-chain/tendermint/libs/log"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/p2p/conn"
+	"github.com/bnb-chain/tendermint/config"
+	"github.com/bnb-chain/tendermint/p2p/conn"
 )
 
 const testCh = 0x01

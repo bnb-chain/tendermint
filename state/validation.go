@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/tendermint/tendermint/crypto"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	"github.com/tendermint/tendermint/types"
+	"github.com/bnb-chain/tendermint/crypto"
+	dbm "github.com/bnb-chain/tendermint/libs/db"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 //-----------------------------------------------------

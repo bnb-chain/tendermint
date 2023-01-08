@@ -9,13 +9,13 @@ import (
 	"strings"
 	"time"
 
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	dbm "github.com/bnb-chain/tendermint/libs/db"
 	"github.com/pkg/errors"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	dbm "github.com/tendermint/tendermint/libs/db"
 
-	"github.com/tendermint/tendermint/libs/pubsub/query"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/types"
+	"github.com/bnb-chain/tendermint/libs/pubsub/query"
+	"github.com/bnb-chain/tendermint/state/txindex"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 const (

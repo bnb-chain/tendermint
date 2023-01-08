@@ -7,12 +7,12 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 
+	abci "github.com/bnb-chain/tendermint/abci/types"
+	"github.com/bnb-chain/tendermint/crypto"
+	"github.com/bnb-chain/tendermint/crypto/ed25519"
+	"github.com/bnb-chain/tendermint/crypto/secp256k1"
+	"github.com/bnb-chain/tendermint/version"
 	amino "github.com/tendermint/go-amino"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/secp256k1"
-	"github.com/tendermint/tendermint/version"
 )
 
 func TestABCIPubKey(t *testing.T) {

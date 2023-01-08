@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	"github.com/bnb-chain/tendermint/p2p"
+	sm "github.com/bnb-chain/tendermint/state"
+	"github.com/bnb-chain/tendermint/types"
 	"github.com/stretchr/testify/require"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/p2p"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
 )
 
 //----------------------------------------------

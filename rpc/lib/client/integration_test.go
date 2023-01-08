@@ -1,3 +1,4 @@
+//go:build release
 // +build release
 
 // The code in here is comprehensive as an integration
@@ -13,8 +14,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/bnb-chain/tendermint/libs/log"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/libs/log"
 )
 
 func TestWSClientReconnectWithJitter(t *testing.T) {

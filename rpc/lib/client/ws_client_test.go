@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/bnb-chain/tendermint/libs/log"
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/libs/log"
 
-	types "github.com/tendermint/tendermint/rpc/lib/types"
+	types "github.com/bnb-chain/tendermint/rpc/lib/types"
 )
 
 var wsCallTimeout = 5 * time.Second

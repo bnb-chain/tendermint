@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/bnb-chain/tendermint/libs/log"
+	tmtypes "github.com/bnb-chain/tendermint/types"
 	"github.com/pkg/errors"
-	"github.com/tendermint/tendermint/libs/log"
-	tmtypes "github.com/tendermint/tendermint/types"
 )
 
 // waiting more than this many seconds for a block means we're unhealthy

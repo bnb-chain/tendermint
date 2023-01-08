@@ -5,10 +5,10 @@ import (
 	"net"
 	"time"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/libs/log"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	"github.com/bnb-chain/tendermint/libs/log"
 
-	tmconn "github.com/tendermint/tendermint/p2p/conn"
+	tmconn "github.com/bnb-chain/tendermint/p2p/conn"
 )
 
 const metricsTickerDuration = 10 * time.Second

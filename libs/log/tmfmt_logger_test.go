@@ -8,9 +8,9 @@ import (
 	"regexp"
 	"testing"
 
+	"github.com/bnb-chain/tendermint/libs/log"
 	kitlog "github.com/go-kit/kit/log"
 	"github.com/stretchr/testify/assert"
-	"github.com/tendermint/tendermint/libs/log"
 )
 
 func TestTMFmtLogger(t *testing.T) {

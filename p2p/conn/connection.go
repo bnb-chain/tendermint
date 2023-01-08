@@ -12,10 +12,10 @@ import (
 	"sync/atomic"
 	"time"
 
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	flow "github.com/bnb-chain/tendermint/libs/flowrate"
+	"github.com/bnb-chain/tendermint/libs/log"
 	amino "github.com/tendermint/go-amino"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	flow "github.com/tendermint/tendermint/libs/flowrate"
-	"github.com/tendermint/tendermint/libs/log"
 )
 
 const (

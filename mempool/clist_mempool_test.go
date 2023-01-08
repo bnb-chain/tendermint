@@ -17,15 +17,15 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	"github.com/tendermint/tendermint/abci/example/counter"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	abciserver "github.com/tendermint/tendermint/abci/server"
-	abci "github.com/tendermint/tendermint/abci/types"
-	cfg "github.com/tendermint/tendermint/config"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	"github.com/bnb-chain/tendermint/abci/example/counter"
+	"github.com/bnb-chain/tendermint/abci/example/kvstore"
+	abciserver "github.com/bnb-chain/tendermint/abci/server"
+	abci "github.com/bnb-chain/tendermint/abci/types"
+	cfg "github.com/bnb-chain/tendermint/config"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	"github.com/bnb-chain/tendermint/libs/log"
+	"github.com/bnb-chain/tendermint/proxy"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 // A cleanupFunc cleans up any config / test files created for a particular

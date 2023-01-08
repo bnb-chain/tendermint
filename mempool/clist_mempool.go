@@ -11,14 +11,14 @@ import (
 
 	"github.com/pkg/errors"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	cfg "github.com/tendermint/tendermint/config"
-	auto "github.com/tendermint/tendermint/libs/autofile"
-	"github.com/tendermint/tendermint/libs/clist"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/bnb-chain/tendermint/abci/types"
+	cfg "github.com/bnb-chain/tendermint/config"
+	auto "github.com/bnb-chain/tendermint/libs/autofile"
+	"github.com/bnb-chain/tendermint/libs/clist"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	"github.com/bnb-chain/tendermint/libs/log"
+	"github.com/bnb-chain/tendermint/proxy"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 //--------------------------------------------------------------------------------

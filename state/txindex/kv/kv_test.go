@@ -6,15 +6,15 @@ import (
 	"os"
 	"testing"
 
+	abci "github.com/bnb-chain/tendermint/abci/types"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	db "github.com/bnb-chain/tendermint/libs/db"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	db "github.com/tendermint/tendermint/libs/db"
 
-	"github.com/tendermint/tendermint/libs/pubsub/query"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/types"
+	"github.com/bnb-chain/tendermint/libs/pubsub/query"
+	"github.com/bnb-chain/tendermint/state/txindex"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 func TestTxIndex(t *testing.T) {

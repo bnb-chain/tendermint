@@ -3,21 +3,26 @@
 
 package core_grpc
 
-import proto "github.com/gogo/protobuf/proto"
-import golang_proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
-import _ "github.com/gogo/protobuf/gogoproto"
-import types "github.com/tendermint/tendermint/abci/types"
-
-import bytes "bytes"
-
 import (
-	context "golang.org/x/net/context"
-	grpc "google.golang.org/grpc"
-)
+	proto "github.com/gogo/protobuf/proto"
+	golang_proto "github.com/golang/protobuf/proto"
 
-import io "io"
+	fmt "fmt"
+
+	math "math"
+
+	_ "github.com/gogo/protobuf/gogoproto"
+
+	types "github.com/bnb-chain/tendermint/abci/types"
+
+	bytes "bytes"
+
+	context "golang.org/x/net/context"
+
+	grpc "google.golang.org/grpc"
+
+	io "io"
+)
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

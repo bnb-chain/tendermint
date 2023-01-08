@@ -6,9 +6,9 @@ import (
 	"os"
 	"testing"
 
+	"github.com/bnb-chain/tendermint/privval"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/privval"
 )
 
 const oldPrivvalContent = `{

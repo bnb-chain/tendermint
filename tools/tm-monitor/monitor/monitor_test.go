@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
+	"github.com/bnb-chain/tendermint/crypto/ed25519"
+	ctypes "github.com/bnb-chain/tendermint/rpc/core/types"
+	mock "github.com/bnb-chain/tendermint/tools/tm-monitor/mock"
+	monitor "github.com/bnb-chain/tendermint/tools/tm-monitor/monitor"
+	tmtypes "github.com/bnb-chain/tendermint/types"
 	amino "github.com/tendermint/go-amino"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	mock "github.com/tendermint/tendermint/tools/tm-monitor/mock"
-	monitor "github.com/tendermint/tendermint/tools/tm-monitor/monitor"
-	tmtypes "github.com/tendermint/tendermint/types"
 )
 
 func TestMonitorUpdatesNumberOfValidators(t *testing.T) {

@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
+	cmn "github.com/bnb-chain/tendermint/libs/common"
 	"github.com/stretchr/testify/assert"
-	cmn "github.com/tendermint/tendermint/libs/common"
 )
 
 func TestPanicOnMaxLength(t *testing.T) {

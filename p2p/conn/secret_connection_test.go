@@ -15,12 +15,12 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/bnb-chain/tendermint/crypto"
+	"github.com/bnb-chain/tendermint/crypto/ed25519"
+	"github.com/bnb-chain/tendermint/crypto/secp256k1"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/secp256k1"
-	cmn "github.com/tendermint/tendermint/libs/common"
 )
 
 type kvstoreConn struct {

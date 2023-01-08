@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/bnb-chain/tendermint/libs/log"
 	"github.com/go-logfmt/logfmt"
-	"github.com/tendermint/tendermint/libs/log"
 )
 
 func TestLoggerLogsItsErrors(t *testing.T) {

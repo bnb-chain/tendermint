@@ -5,9 +5,9 @@ import (
 	"math/rand"
 	"testing"
 
+	cmn "github.com/bnb-chain/tendermint/libs/common"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	cmn "github.com/tendermint/tendermint/libs/common"
 )
 
 func randCompactBitArray(bits int) (*CompactBitArray, []byte) {

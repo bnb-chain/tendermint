@@ -3,17 +3,28 @@
 
 package core_grpc
 
-import testing "testing"
-import math_rand "math/rand"
-import time "time"
-import github_com_gogo_protobuf_proto "github.com/gogo/protobuf/proto"
-import github_com_gogo_protobuf_jsonpb "github.com/gogo/protobuf/jsonpb"
-import proto "github.com/gogo/protobuf/proto"
-import golang_proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
-import _ "github.com/gogo/protobuf/gogoproto"
-import _ "github.com/tendermint/tendermint/abci/types"
+import (
+	math_rand "math/rand"
+	testing "testing"
+
+	time "time"
+
+	github_com_gogo_protobuf_proto "github.com/gogo/protobuf/proto"
+
+	github_com_gogo_protobuf_jsonpb "github.com/gogo/protobuf/jsonpb"
+
+	proto "github.com/gogo/protobuf/proto"
+
+	golang_proto "github.com/golang/protobuf/proto"
+
+	fmt "fmt"
+
+	math "math"
+
+	_ "github.com/gogo/protobuf/gogoproto"
+
+	_ "github.com/bnb-chain/tendermint/abci/types"
+)
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

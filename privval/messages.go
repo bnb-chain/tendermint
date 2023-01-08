@@ -1,9 +1,9 @@
 package privval
 
 import (
+	"github.com/bnb-chain/tendermint/crypto"
+	"github.com/bnb-chain/tendermint/types"
 	amino "github.com/tendermint/go-amino"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/types"
 )
 
 // RemoteSignerMsg is sent between SignerServiceEndpoint and the SignerServiceEndpoint client.

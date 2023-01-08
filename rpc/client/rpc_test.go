@@ -10,13 +10,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/bnb-chain/tendermint/abci/types"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/rpc/client"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
-	"github.com/tendermint/tendermint/types"
+	cmn "github.com/bnb-chain/tendermint/libs/common"
+	"github.com/bnb-chain/tendermint/rpc/client"
+	ctypes "github.com/bnb-chain/tendermint/rpc/core/types"
+	rpctest "github.com/bnb-chain/tendermint/rpc/test"
+	"github.com/bnb-chain/tendermint/types"
 )
 
 func getHTTPClient() *client.HTTP {

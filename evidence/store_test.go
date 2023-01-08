@@ -3,9 +3,9 @@ package evidence
 import (
 	"testing"
 
+	dbm "github.com/bnb-chain/tendermint/libs/db"
+	"github.com/bnb-chain/tendermint/types"
 	"github.com/stretchr/testify/assert"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	"github.com/tendermint/tendermint/types"
 )
 
 //-------------------------------------------
