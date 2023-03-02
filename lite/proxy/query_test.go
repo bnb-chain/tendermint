@@ -42,6 +42,7 @@ func kvstoreTx(k, v []byte) []byte {
 
 // TODO: enable it after general proof format has been adapted
 // in abci/examples/kvstore.go
+//
 //nolint:unused,deadcode
 func _TestAppProofs(t *testing.T) {
 	assert, require := assert.New(t), require.New(t)
@@ -108,7 +109,7 @@ func _TestAppProofs(t *testing.T) {
 	require.Equal(height, brh)
 
 	assert.EqualValues(v, bs)
-	err = prt.VerifyValue(proof, rootHash, string(k), bs) // XXX key encoding
+	err = prt.VerifyValue(proof, rootHash, string(k), bs, nil) // XXX key encoding
 	assert.NoError(err, "%#v", err)
 
 	// Test non-existing key.

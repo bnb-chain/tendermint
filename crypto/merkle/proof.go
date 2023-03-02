@@ -31,6 +31,7 @@ type ProofOperator interface {
 type ProofOperators []ProofOperator
 
 type ProofOpVerifier func(ProofOperator) error
+type ProofOpsVerifier func(ProofOperators) error
 
 func (poz ProofOperators) VerifyValue(root []byte, keypath string, value []byte, verifiers ...ProofOpVerifier) (err error) {
 	return poz.Verify(root, keypath, [][]byte{value}, verifiers...)
@@ -117,20 +118,25 @@ func (prt *ProofRuntime) DecodeProof(proof *Proof) (ProofOperators, error) {
 	return poz, nil
 }
 
-func (prt *ProofRuntime) VerifyValue(proof *Proof, root []byte, keypath string, value []byte, verifiers ...ProofOpVerifier) (err error) {
-	return prt.Verify(proof, root, keypath, [][]byte{value}, verifiers...)
+func (prt *ProofRuntime) VerifyValue(proof *Proof, root []byte, keypath string, value []byte, pozVerifier ProofOpsVerifier, verifiers ...ProofOpVerifier) (err error) {
+	return prt.Verify(proof, root, keypath, [][]byte{value}, pozVerifier, verifiers...)
 }
 
 // TODO In the long run we'll need a method of classifcation of ops,
 // whether existence or absence or perhaps a third?
 func (prt *ProofRuntime) VerifyAbsence(proof *Proof, root []byte, keypath string, verifiers ...ProofOpVerifier) (err error) {
-	return prt.Verify(proof, root, keypath, nil, verifiers...)
+	return prt.Verify(proof, root, keypath, nil, nil, verifiers...)
 }
 
-func (prt *ProofRuntime) Verify(proof *Proof, root []byte, keypath string, args [][]byte, verifiers ...ProofOpVerifier) (err error) {
+func (prt *ProofRuntime) Verify(proof *Proof, root []byte, keypath string, args [][]byte, pozVerifier ProofOpsVerifier, verifiers ...ProofOpVerifier) (err error) {
 	poz, err := prt.DecodeProof(proof)
 	if err != nil {
 		return cmn.ErrorWrap(err, "decoding proof")
+	}
+	if pozVerifier != nil {
+		if err := pozVerifier(poz); err != nil {
+			return err
+		}
 	}
 	return poz.Verify(root, keypath, args, verifiers...)
 }
