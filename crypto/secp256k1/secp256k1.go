@@ -215,6 +215,34 @@ func (pubKey PubKeySecp256k1) VerifyBytes(msg []byte, sigStr []byte) bool {
 	return signature.Verify(crypto.Sha256(msg), pub)
 }
 
+// VerifyBytesWithMsgHash verifies a signature of the form R || S.
+// It rejects signatures which are not in lower-S form.
+// This function would not calculate the hash of msg.
+func (pubKey PubKeySecp256k1) VerifyBytesWithMsgHash(msgHash []byte, sigStr []byte) bool {
+	if len(sigStr) != 64 {
+		return false
+	}
+
+	pub, err := secp256k1.ParsePubKey(pubKey)
+	if err != nil {
+		return false
+	}
+
+	r, s, err := signatureFromBytes(sigStr)
+	if err != nil {
+		return false
+	}
+
+	signature := ecdsa.NewSignature(r, s)
+
+	// Reject malleable signatures. libsecp256k1 does this check but btcec doesn't.
+	if s.IsOverHalfOrder() {
+		return false
+	}
+
+	return signature.Verify(msgHash, pub)
+}
+
 // Read Signature struct from R || S. Caller needs to ensure
 // that len(sigStr) == 64.
 func signatureFromBytes(sigStr []byte) (*secp256k1.ModNScalar, *secp256k1.ModNScalar, error) {
