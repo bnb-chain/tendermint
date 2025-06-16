@@ -130,10 +130,7 @@ func GenPrivKeySecp256k1(secret []byte) PrivKeySecp256k1 {
 // The returned signature will be of the form R || S (in lower-S form).
 func (privKey PrivKeySecp256k1) Sign(msg []byte) ([]byte, error) {
 	priv, _ := secp256k1.PrivKeyFromBytes(privKey)
-	signature, err := ecdsa.SignCompact(priv, crypto.Sha256(msg), false)
-	if err != nil {
-		return nil, err
-	}
+	signature := ecdsa.SignCompact(priv, crypto.Sha256(msg), false)
 
 	return signature[1:], nil
 }
